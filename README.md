@@ -71,7 +71,8 @@ Navigate back to Okta, under `My Apps` select `LAB Access`  This will launch the
 * NetApp GUI
   1. Launch the 'NTAP' shortcut located on the desktop within the jumpbox.
   2. Username is - 'admin'
-  3. Password is - 'SDNlab01@' 
+  3. Password is - 'SDNlab01@'
+  4. Make sure you select, "Not now. Sign in to System Manager" the first time. 
 * vCenter GUI
   1. Launch the 'vCenter' shortcut located on the desktop within the jumpbox.
   2. Username is - 'administrator@vsphere.local'
@@ -99,7 +100,7 @@ In Lab 1 we will start the production Epic server, mount the RDMs, create a file
     * For the second RDM name the file sytem epic_prd2.
     * Now that we've created a partition on the disks we need to mount them.
     * Select the first RDM that you named epic_prd1 and click the play button.
-    * Select the second RDM that you named epic_prd1 and click the play button.
+    * Select the second RDM that you named epic_prd2 and click the play button.
     * You will see both RDM's get mounted under /media/sdx with their respective partition name.<br>![](images/lab1_step2c.png)
 3. Create files and folders in new volumes on epic-prd
     * Click the files icon on your virtual machine.
@@ -192,7 +193,7 @@ In Lab 4 we will start the production RPT server and verify that no RDMs are att
     * Name - 'Rpt Init'
     * Inventory - 'Demo Inventory'
     * Project - 'CDW EPIC'
-    * Playbook - 'epic_role/create_snapshot.yml'
+    * Playbook - 'epic_role/init_environment.yml'
     * Credentials - Under Selected Category select Network and then choose CDW NetApp
     * Also add the vCenter credentials - Under Selected Category select VMware vCenter and then choose CDW vCenter
     * Under the Variables section input the following
@@ -239,7 +240,7 @@ In Lab 5 we will create and delete files from the PRD and RPT environments.  We 
     * In the AWX GUI navigate to `Resources -> Templates.
     * Click on the rocket ship (Launch Template) under actions for the Prd Backup template.<br>![](images/lab5_step1a.png)
     * Wait for the job to compelete, if needed, select Reload output<br>![](images/lab3_step1b.png)
-4. Within the AWX interface we will need to create a new Template to refreshed the cloned LUNS presented to RPT from the latest PRD snapshot backups.
+4. Within the AWX interface we will need to create a new template to refresh the cloned LUNS presented to RPT from the latest PRD snapshot backups.
     * In the AWX GUI navigate to `Resources -> Templates -> Add -> Add job template.
     * In the Create New Job Template window enter the following information
     * Name - 'Rpt Refresh'
