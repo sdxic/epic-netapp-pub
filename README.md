@@ -160,7 +160,7 @@ In lab 3 we will create the Ansible AWX backup job template and run it.  This jo
     * Project - 'CDW EPIC'
     * Playbook - 'epic_role/create_snapshot.yml'
     * Credentials - Under Selected Category select Network and then choose CDW NetApp
-    * Under the Variables section input the following
+    * Under the Variables section input the following.  Make sure you copy everything over, review the screenshot as an example.
     * '---'
     * instance: "{{ ntap_prd }}"
     * Hit the Save button<br>![](images/lab3_step1b.png)
@@ -196,7 +196,7 @@ In Lab 4 we will start the production RPT server and verify that no RDMs are att
     * Playbook - 'epic_role/init_environment.yml'
     * Credentials - Under Selected Category select Network and then choose CDW NetApp
     * Also add the vCenter credentials - Under Selected Category select VMware vCenter and then choose CDW vCenter
-    * Under the Variables section input the following
+    * Under the Variables section input the following.  Make sure you copy everything over, review the screenshot as an example.
     * '---'
     * instance: "{{ ntap_rpt }}"
     * Hit the Save button<br>![](images/lab4_step4a.png)
@@ -249,7 +249,7 @@ In Lab 5 we will create and delete files from the PRD and RPT environments.  We 
     * Playbook - 'epic_role/refresh_environment.yml'
     * Credentials - Under Selected Category select Network and then choose CDW NetApp
     * Also add the vCenter credentials - Under Selected Category select VMware vCenter and then choose CDW vCenter
-    * Under the Variables section input the following
+    * Under the Variables section input the following.  Make sure you copy everything over, review the screenshot as an example.
     * '---'
     * instance: "{{ ntap_rpt }}"
     * Hit the Save button<br>![](images/lab5_step4a.png)
