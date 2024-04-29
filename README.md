@@ -14,7 +14,7 @@ In this lab you will setup a new NetApp Cluster and perform routine storage admi
 # Part 1: Initial Setup Activities
 1. On the lab jumpbox, launch the NTAP shortcut.  This shortcut will take you to the NetApp System Manager web interface.
 <br>
-![images](part1_step1a.png)
+![](images/part1_step1a.png)
 <br>
 2. You will get a "Your connection is not private" message, select advanced and then click Proceed.
 #put in screenshot
