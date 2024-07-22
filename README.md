@@ -49,7 +49,7 @@ The lab guide provides a comprehensive walkthrough for utilizing Ansible AWX to 
 
 # Part 2: Lab Access
 ## Okta Account Setup
-1. Navigate to https://siriussdx.okta.com/
+1. Navigate to https://okta.cdwsdx.com/
 2. Create an account if you do not currently have one by selecting the `Sign up` link at the bottom of the login box.<br>
 ![](images/okta_login.jpg)
 
