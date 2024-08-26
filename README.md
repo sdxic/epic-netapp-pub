@@ -77,7 +77,7 @@ The lab guide provides a comprehensive walkthrough for utilizing Ansible AWX to 
     * Epic Servers
         1. Two servers have been created for you, epic-prd and epic-rpt
         2. Username is - sdx
-        3. Password is - Use the password listed within the my labs secion.
+        3. Password is - SDNlab01@
 
 ## Part 3: Lab 1 - Mount file systems and create documents
 
