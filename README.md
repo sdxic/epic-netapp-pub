@@ -1,6 +1,6 @@
 # NetApp Epic Automation Lab
 
-In this lab you will use Ansible playbooks to deploy, modify, clone and remove various objects within NetApp, Linux and VMware.  This lab will familiarize you with using Ansible AWX to perform backups, clones and refreshes of a simulated EPIC environment.  Success at various steps will be verified by the user along the way by making modifications to files and examining the results.
+Welcome to this comprehensive lab where you'll dive into the automation of provisioning, backup, and environment refreshing. In this lab, you'll explore how to streamline and optimize these critical processes using a powerful combination of VMware, NetApp, and AWX.
 
 You will be required to create and modify some files during the course of this workshop.  You will not be required to write your own playbooks as this would require much more time.
 
@@ -9,8 +9,7 @@ You will be required to create and modify some files during the course of this w
 
 ## Outline
 
-* Part 1: Evolving EMR Landscape and Healthcare Needs
-  * EPIC EMR Review
+* Part 1: Evolving Infrastructure Landscape Needs
   * Day to day management challenges
   * Ansible AWX
   * NetApp
@@ -32,13 +31,9 @@ You will be required to create and modify some files during the course of this w
 
 ## Part 1: Technology Intro
 
-## EPIC EMR Review
-
-Epic is a widely-used electronic health records (EHR) system designed to digitize and streamline healthcare processes, offering comprehensive solutions for medical institutions. It provides a unified platform for managing patient records, clinical workflows, and administrative tasks, enhancing communication and coordination among healthcare providers. With features like interoperability, decision support, and patient engagement tools, Epic facilitates improved patient care and operational efficiency within healthcare organizations. Its widespread adoption has made it a key player in the digital transformation of the healthcare industry.
-
 ## Day to day management challenges
 
-Day-to-day management challenges with Epic often revolve around the complexity and scale of the electronic health records (EHR) system. Maintaining optimal system performance can be demanding, with the need to handle large volumes of sensitive patient data while ensuring quick access for healthcare providers. Upgrades and patches require meticulous planning and execution to minimize disruptions to critical healthcare workflows. Additionally, ensuring data security and compliance with regulatory standards poses ongoing challenges, necessitating robust measures to safeguard patient information against potential breaches or unauthorized access. Addressing these challenges requires a delicate balance between system optimization, seamless updates, and maintaining a secure and compliant EHR infrastructure.
+Day-to-day management challenges with infrastructure often revolve around complexity and scale. Maintaining optimal system performance can be demanding, especially when handling large volumes of sensitive data while ensuring quick access for users. Upgrades and patches require meticulous planning and execution to minimize disruptions to critical workflows. Additionally, ensuring data security and compliance with regulatory standards poses ongoing challenges, necessitating robust measures to safeguard information against potential breaches or unauthorized access. Addressing these challenges requires a delicate balance between system optimization, seamless updates, and maintaining a secure and compliant infrastructure.
 
 ## Ansible AWX
 
@@ -50,7 +45,7 @@ NetApp is a leading data management and storage solutions provider that speciali
 
 ## Lab Overview
 
-The lab guide provides a comprehensive walkthrough for utilizing Ansible AWX to streamline the process of creating snapshot backups on NetApp storage systems and refreshing EPIC environments. It begins by detailing the integration steps between AWX and NetApp. The guide then walks users through the steps to configure AWX workflows specifically tailored for NetApp backup tasks. Additionally, it covers the intricacies of automating EPIC environment refreshes, enhancing overall operational efficiency and reducing manual intervention in complex healthcare IT environments.
+The lab guide provides a comprehensive walkthrough for utilizing Ansible AWX to streamline the process of creating snapshot backups on NetApp storage systems and refreshing cloned environments. It begins by detailing the integration steps between AWX and NetApp. The guide then walks users through the steps to configure AWX workflows specifically tailored for NetApp backup tasks. Additionally, it covers the intricacies of automating environment refreshes, enhancing overall operational efficiency and reducing manual intervention in complex IT environments.
 
 ## Part 2: Lab Access
 
@@ -74,14 +69,14 @@ The lab guide provides a comprehensive walkthrough for utilizing Ansible AWX to 
         1. Launch the 'vCenter' shortcut located on the desktop within the jumpbox.
         2. Username is - <administrator@vsphere.local>
         3. Password is - Use the password listed within the my labs secion.
-    * Epic Servers
+    * Servers
         1. Two servers have been created for you, epic-prd and epic-rpt
         2. Username is - sdx
         3. Password is - SDNlab01@
 
 ## Part 3: Lab 1 - Mount file systems and create documents
 
-In Lab 1 we will start the production Epic server, mount the RDMs, create a file system and create files in the new file systems.
+In Lab 1 we will start the production server, mount the RDMs, create a file system and create files in the new file systems.
 
 1. Open the vCenter desktop shortcut
     * Login with the username and password outlined in this guide under vCenter GUI
