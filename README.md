@@ -1,4 +1,4 @@
-# NetApp Automated Provisioning / Backup / Refresh
+# Automated Provisioning / Backup / Refresh
 
 Welcome to this comprehensive lab where you'll dive into the automation of provisioning, backup, and environment refreshing. In this lab, you'll explore how to streamline and optimize these critical processes using a powerful combination of VMware, NetApp, and RedHat Ansible Automation Platform by way of AWX.
 
